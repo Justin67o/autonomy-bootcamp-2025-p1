@@ -134,10 +134,7 @@ class DetectRed:
         # Annotate the colour detections
         # replace the '_' parameter with the appropiate variable
         contours, _ = cv2.findContours(_, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-        for contour in contours:
-        # Draw bounding rectangle around each detected red object
-            x, y, w, h = cv2.boundingRect(contour)
-            cv2.rectangle(res, (x, y), (x + w, y + h), (0, 255, 0), 2)  # green rectangle
+
         # ============
         # ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
         # ============
